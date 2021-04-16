@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Rubik", "sans-serif";
+}
+
+.container{
+    background-image: url(images/pattern-bg.png);
+    height: 300px;
+    position: relative;
+}
+
+.header{
+    position: absolute;
+    color: white;
+    left: 40%;
+    margin-top: 50px;
+    
+}
+
+.search-form{
+    position: absolute;
+    color: white;
+    left: 35%;
+    margin-top: 50px;
+    top: 50px;
+}
+
+.search-input{
+    width: 400px;
+    height: 40px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px 0 0 10px;
+    border:none;
+    padding: 5px 10px 5px 10px;
+}
+
+.search-button{
+    padding: 18px 20px;
+    margin:0;
+    position: absolute;
+    right: -47px;
+    background: black;
+    border: black;
+    outline: none;
+    color: white;
+    border-radius: 0% 20% 20% 0%;
+}
+
+.result-container{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    top: 250px;
+    left: 150px;
+    border-radius: 20px;
+    
+}
+
+.results{
+    /* border-right: 1px solid black; */
+    position: relative;
+    padding: 10px 150px 10px 20px;
+    z-index: 3;
+    background-color: white;
+    
+
+}
+
+.results:after{
+  content: "";
+  background: #ccc;
+  position: absolute;
+  bottom: 25%;
+  left: 0%;
+  height: 50%;
+  width: 1px;
+}
+
+.leaflet-container{
+    height: 60vh;
+    z-index: 1;
+}
