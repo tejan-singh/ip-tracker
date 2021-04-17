@@ -39,7 +39,7 @@ function App() {
   return (
     loaded ? (
       <div>
-        <div className="container">
+        <div className="container-box">
 
           <div className="input-section">
             <h1 className="header"> IP Address Tracker</h1>
@@ -50,14 +50,14 @@ function App() {
             </form>
 
           </div>
-        
+
           <div className="result-container">
 
             <Result
               heading={"IP Address"}
               searchResult={IPdata.ip}
             />
-
+          
             <Result
               heading={"Location"}
               searchResult={IPdata?.location?.country}
@@ -74,7 +74,7 @@ function App() {
             />
 
           </div>
-
+          
         </div>
 
         {IPdata.location && (

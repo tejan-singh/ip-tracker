@@ -5,10 +5,12 @@ body{
     font-family: "Rubik", "sans-serif";
 }
 
-.container{
+.container-box{
     background-image: url(images/pattern-bg.png);
+    background-size: cover;
     height: 300px;
     position: relative;
+   
 }
 
 .header{
@@ -62,11 +64,12 @@ body{
 .results{
     /* border-right: 1px solid black; */
     position: relative;
-    padding: 10px 150px 10px 20px;
+    padding: 10px 100px 10px 20px;
     z-index: 3;
     background-color: white;
-    
-
+    min-width: 25vh;
+    max-width: 25vh;
+    text-align: center;
 }
 
 .results:after{
@@ -83,3 +86,42 @@ body{
     height: 60vh;
     z-index: 1;
 }
+
+@media screen and (max-width: 990px) {
+    .result-container{
+        background-color: white;
+        flex-direction: column;
+        position: absolute;
+        top: 250px;
+        left: 250px;
+        border-radius: 20px;
+       
+
+    }
+
+    
+      .results{
+        padding: 0px 20px 0px 20px;
+        z-index: 3;
+        background-color: white;
+        min-width: 50vh;
+        max-width: 50vh;
+        
+       
+    }
+
+    .results:after{
+        width:0;
+      }
+    
+    .result-heading{
+        font-size: 10px;
+    }
+
+    .search-results{
+        font-size: 20px;
+        margin: 8px 0 20px;
+        padding: 0;
+    }
+  }
+
