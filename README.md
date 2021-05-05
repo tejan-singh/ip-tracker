@@ -16,3 +16,5 @@ Tech Stack Used:
 - IP Geolocation API by IPify
 - OpenStreetMap API
 
+**Note: The App works best in Google Chrome**
+
