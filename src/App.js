@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
 import Result from "../src/Components/Result";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import {MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 function App() {
 
@@ -18,13 +18,13 @@ function App() {
 
   function getIp() {
     fetch(`https://geo.ipify.org/api/v1?apiKey=${process.env.REACT_APP_GEOIPIFY_KEY}&ipAddress=${query}&domain=${query}`)
-    .then(rawData => {rawData.json()})
-    .then(result => { SetIPData(result) });
+    .then(rawData => rawData.json() )
+    .then(result =>  SetIPData(result) )   
   }
 
   function handleChange(event) {
     setSearch(event.target.value);
-    // console.log(event.target.value);
+    console.log(event.target.value);
 
   }
 
@@ -34,8 +34,6 @@ function App() {
     setSearch('');
 
   }
-
-
 
   return (
     loaded ? (
@@ -58,7 +56,7 @@ function App() {
               heading={"IP Address"}
               searchResult={IPdata.ip}
             />
-
+          
             <Result
               heading={"Location"}
               searchResult={IPdata?.location?.country}
@@ -75,7 +73,7 @@ function App() {
             />
 
           </div>
-
+          
         </div>
 
         {IPdata.location && (
