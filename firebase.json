@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "/public",
+    "public": "ip-tracker/public",
     "ignore": [
       "firebase.json",
       "**/.*",
