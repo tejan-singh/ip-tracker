@@ -45,7 +45,7 @@ function App() {
 
             <form onSubmit={handleSubmit} className="search-form">
               <input className="search-input" type="text" placeholder="Search for any IP address or domain" onChange={handleChange} />
-              <button className="search-button" type="submit"> Go! </button>
+              <button className="search-button" type="submit"> Go!! </button>
             </form>
 
           </div>
